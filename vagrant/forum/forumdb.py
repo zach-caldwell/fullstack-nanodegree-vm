@@ -1,6 +1,5 @@
 # "Database code" for the DB Forum.
 
-import datetime
 import psycopg2
 
 DBNAME = "forum"
@@ -15,6 +14,5 @@ def get_posts():
 
 def add_post(content):
   """Add a post to the 'database' with the current timestamp."""
-  POSTS.append((content, datetime.datetime.now()))
 
 
